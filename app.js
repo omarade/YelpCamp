@@ -25,6 +25,7 @@ app.get("/campgrounds", (req, res) => {
 app.post("/campgrounds", (req, res) => {
     let name = req.body.name;
     let image = req.body.image;
+    console.log(image)
     let newCamp = {name: name, image: image}
     campgrounds.push(newCamp)
     res.redirect("/campgrounds");

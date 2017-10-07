@@ -3,5 +3,14 @@
     <head>
     	<title><%=title%></title>
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<% if (title === "Landing Page"){ %>
+    	    <link rel="stylesheet" href="/css/landing.css">
+    	<% } else if (title === "Campgrounds"){ %>
+    	    <link rel="stylesheet" href="/css/campgrounds.css">
+    	<% } else if (title === "Add a Campground"){ %>
+    	    <link rel="stylesheet" href="/css/new.css">
+    	<% } %>
     </head>
     <body>
+        
+        
